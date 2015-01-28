@@ -1,4 +1,4 @@
-// Objects
+Objects
 //
 // Objects, in JavaScript can be thought of simply as
 // collections of key/value pairs. They are a bit more
