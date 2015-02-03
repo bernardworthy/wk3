@@ -1,10 +1,12 @@
-(function() {
+// (function() {
 
 
 
+//______________________________
 
+//Toggle Modal Section
 
-
+//______________________________
 
   function toggleModal(element, className) {
     var currentClasses = element.className;
@@ -49,6 +51,50 @@
 
   });
 
+//______________________________
+
+//Text-Area Max Length Section
+
+//What we need:
+
+// - available chars variable = max-length value
+// - some keyup event will --(available char variable.value)
+// - .textContent = available chars
+// - .setAttribute.color = red if available chars <= 0
+
+//______________________________
+
+  var maxChars = 50;
+
+  var charsDiv = document.querySelector('.form-textarea');
+
+  var charsTextArea = document.querySelector('.capped-txt');
+
+  var usedChars;
+
+  var availChars;
+
+  // function updateChars() {
+  //   if (availChars - usedChars < 0) {
+  //     charsTextArea.style.color = "red";
+  //   }
+  // }
+
+  charsTextArea.addEventListener('keyup', function(e) {
+
+    usedChars = charsTextArea.value.length;
+
+    availChars = maxChars - usedChars;
+
+    document.querySelector('.available-chars').textContent = availChars + " chars remaining";
+
+    if (availChars < 0) {
+      charsTextArea.style.color = "red";
+    } else {
+      charsTextArea.style.color = "initial";
+    }
+
+  });
 
 
 
@@ -79,4 +125,11 @@
 
 
 
-})();
+
+
+
+
+
+
+
+// })();

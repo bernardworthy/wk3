@@ -1,0 +1,147 @@
+.section__app {
+  background-image: url(../img/users1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50em;
+  z-index: -1;
+}
+
+.section__app:before {
+  content: '';
+  position: absolute;
+  background-color:black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50em;
+  opacity: .2;
+  z-index: 0;
+}
+
+.section__users {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 66%;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.75);
+}
+
+.section__users:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: .8;
+  background-color: white;
+  z-index: -1;
+}
+
+.section__adduser {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -1px;
+  width: 33%;
+  padding: 2em 4em;
+  box-sizing: border-box;
+  /*background: #C5BB93;*/
+  /*background: #7D9DA0;*/
+  background: #9F88A5;
+}
+
+.section__userdirectory {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -1px;
+  width: 67%;
+  padding: 2em 4em;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+.form {
+  color: black;
+}
+
+.form p {
+  padding-bottom: .5em;
+  font-size: 1.5em;
+  margin-bottom: .45em;
+  color: white;
+}
+
+.textbox1, .textbox2, .textbox3 {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 1em;
+}
+
+.add-btn {
+  background: aqua;
+  color: black;
+}
+
+.list__users {
+  margin-top: 1em;
+}
+
+.list-item {
+  height: 68px;
+  width: 100%;
+  background: white;
+  position: relative;
+  padding-top: 1.2em;
+  padding-left: 1em;
+  border: 1px solid #999;
+}
+
+.list-item__firstname {
+  position: relative;
+  display: inline-block;
+  top: 2.5em;
+  left: 1em;
+  float: left;
+  color: blue;
+}
+
+.list-item__lastname {
+  float: left;
+  display: inline-block;
+  position: relative;
+  color: black;
+  top: 2.5em;
+  left: 1em;
+}
+
+.list-item__email {
+  float: right;
+  display: inline-block;
+  position: relative;
+  color: aqua;
+  top: 2.5em;
+  right: 1em;
+}
+
+.sort {
+  background: aqua;
+}
+
+.list-item__closebtn {
+  position: absolute;
+  top: 0em;
+  right: 0em;
+  width: 4em;
+  height: 100%;
+  background: aqua;
+  color: #777777;
+}
