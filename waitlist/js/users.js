@@ -98,7 +98,6 @@ function showUserStore() {
     var userObj = userObjArr[i];
 
     printUserString(userObj);
-
   }
 }
 
@@ -141,11 +140,11 @@ function getSortVal(sel) {
   var userObjArr = userStore.query();
 
   function compare(a,b) {
-    if (a.lastName < b.lastName) {
+    if (a.lastName.lowercase() < b.lastName.lowercase()) {
 
       return -1;
     }
-    if (a.lastName > b.lastName) {
+    if (a.lastName.lowercase() > b.lastName.lowercase()) {
 
       return 1;
     }
