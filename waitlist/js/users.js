@@ -49,7 +49,7 @@ function addUser() {
 
 function printUserString(obj) {
 
-  var userString = obj.firstName + '          ' + obj.lastName + '         ' + obj.email;
+  var userString = obj.firstName + ' ' + obj.lastName + ' ' + obj.email;
 
   var listLi = document.createElement("li");
 
